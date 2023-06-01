@@ -1,5 +1,16 @@
-ALTER view [dbo].[Merchandise_Report] as
+USE [singhealth_DB]
+GO
 
+/****** Object:  View [dbo].[Merchandise_Report]    Script Date: 6/1/2023 8:29:06 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+ALTER view [dbo].[Merchandise_Report] as
 
 
 ---------------------------------------------- Products WITHOUT ANY DISCOUNT -----------------------------------------------------
@@ -44,7 +55,7 @@ select
         WHEN 0 THEN 'Unpublished'
         ELSE 'Unknown'
     END AS 'ProductStatus',
-NULL AS 'DiscountName',
+'NO ACTIVE DISCOUNT' AS 'DiscountName',
 NULL AS 'DiscountAmount',
 NULL AS 'PromotionStartDate',
 NULL AS 'PromotionEndDate'
@@ -101,7 +112,7 @@ CASE
             AND (GETDATE() <= D.EndDateUtc OR D.EndDateUtc IS NULL)
             AND DAP.Discount_Id IS NOT NULL
             THEN D.[Name]
-        ELSE 'EXPIRED DISCOUNT'
+        ELSE 'NO ACTIVE DISCOUNT'
     END AS 'DiscountName',
 	CASE
         WHEN (GETDATE() >= D.StartDateUtc OR D.StartDateUtc IS NULL)
@@ -200,7 +211,7 @@ CASE
             AND (GETDATE() <= D.EndDateUtc OR D.EndDateUtc IS NULL)
             AND DAP.Discount_Id IS NOT NULL
             THEN D.[Name]
-        ELSE 'EXPIRED DISCOUNT'
+        ELSE 'NO ACTIVE DISCOUNT'
     END AS 'DiscountName',
 	CASE
         WHEN (GETDATE() >= D.StartDateUtc OR D.StartDateUtc IS NULL)
@@ -798,5 +809,8 @@ Not in (
 --------LEFT JOIN Manufacturer M ON PMM.ManufacturerId = M.Id
 --------LEFT JOIN Vendor V ON P.VendorId = V.Id;
 ------GO
+
+
+GO
 
 
