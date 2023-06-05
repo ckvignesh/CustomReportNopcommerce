@@ -1,0 +1,214 @@
+﻿@using Nop.Plugin.FinanceReport.Models
+@using Nop.Plugin.FinanceReport.Domain
+@using Nop.Web.Framework.Models.DataTables
+
+@model Nop.Plugin.FinanceReport.Models.FRFRConfigurationModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+@await Component.InvokeAsync("StoreScopeConfiguration")
+
+@*<h1>
+    Finance Reports
+</h1>
+<button type="button" class="btn btn-success">
+    <i class="fas fa-download"></i>
+    @T("Admin.Common.Export")
+</button>*@
+<form asp-controller="FinanceREport" asp-action="Configure" method="post">
+    <div class="row">
+        <h1 class="float-left col-md-11">
+            Finance Reports
+        </h1>
+        <div class="col.md-1">
+            <div class="btn-group float-right">
+                <button asp-action="ExportExcel" type="submit" class="btn btn-success">
+                    <i class="fas fa-download"></i>
+                    @T("Admin.Common.Export")
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cards-group">
+        <div class="card card-default card-search">
+            <div class="card-body">
+                <div class="search-body">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    @*<nop-label asp-for="OrderNumber" />*@
+                                    <label class="col-form-label">Search From Date</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="FromDate" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    @*<nop-label asp-for="OrderNumber" />*@
+                                    <label class="col-form-label">Search To Date</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="ToDate" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    @*<nop-label asp-for="OrderNumber" />*@
+                                    <label class="col-form-label">Receipt Number</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="OrderNumber" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    @*<nop-label asp-for="OrderStatus" />*@
+                                    <label class="col-form-label">Order Status</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="OrderStatus" />
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    <label class="col-form-label">Payment Mode</label>
+
+                                    @*<nop-label asp-for="PaymentMode" />*@
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="PaymentMode"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    <label class="col-form-label">Customer Name</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="Customer" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="form-group row">
+                            <div class="text-center col-12">
+                                <button type="button" id="search-transaction" class="btn btn-primary btn-search"><i class="fas fa-search"></i>@T("Admin.Common.Search")</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-body">
+
+                    @await Html.PartialAsync("Table", new DataTablesModel
+                    {
+                    Name = "transaction-grid",
+                    UrlRead = new DataUrl("TransactionList", "FinanceREport", null),
+                    SearchButtonId = "search-transaction",
+                    Length = Model.PageSize,
+                    LengthMenu =  Model.AvailablePageSizes,
+                    Filters = new List<FilterParameter>
+                    {
+                    new FilterParameter(nameof(Model.FromDate), typeof(DateTime?)),
+                    new FilterParameter(nameof(Model.ToDate), typeof(DateTime?)),
+                    new FilterParameter(nameof(Model.OrderNumber)),
+                    new FilterParameter(nameof(Model.Customer)),
+                    new FilterParameter(nameof(Model.PaymentMode)),
+                    new FilterParameter(nameof(Model.PaymentStatus)),
+                    new FilterParameter(nameof(Model.OrderStatus)),
+                    },
+                    ColumnCollection = new List<ColumnProperty>
+                    {
+                    new ColumnProperty(nameof(FRTransactionModel.OrderDate))
+                    {
+                    Title = "Receipt Date (UTC)"
+                    },
+                    new ColumnProperty(nameof(FRTransactionModel.OrderNumber))
+                    {
+                    Title = "Receipt Number"
+                    },
+                     new ColumnProperty(nameof(FRTransactionModel.OrderStatus))
+ {
+                    Title = "Order Status"
+                    },
+                   
+                    new ColumnProperty(nameof(FRTransactionModel.Customer))
+                    {
+                    Title = "Customer Name"
+                    },
+                    new ColumnProperty(nameof(FRTransactionModel.CountryName))
+                    {
+                    Title = "Shipping City"
+                    },
+                    
+                   
+                    new ColumnProperty(nameof(FRTransactionModel.OrderSubtotalExclTax))
+                    {
+                    Title = "Amt b4 disc excl. GST"
+                    },
+                   
+                    new ColumnProperty(nameof(FRTransactionModel.OrderDiscount))
+                    {
+                    Title = "Disc excl. GST"
+                    },
+                    
+                    new ColumnProperty(nameof(FRTransactionModel.OrderSubtotalInclTax))
+                    {
+                    Title = "Amt after disc excl. GST"
+                    },
+                    new ColumnProperty(nameof(FRTransactionModel.OrderShippingExclTax))
+                    {
+                    Title = "Delivery Charge excl. GST"
+                    },
+                    //new ColumnProperty(nameof(FRTransactionModel.OrderTotal))
+                    //{
+                    //Title = "Amt after disc excl. GST"
+                    //},
+                    new ColumnProperty(nameof(FRTransactionModel.OrderTax))
+                    {
+                    Title = "GST"
+                    },
+                    new ColumnProperty(nameof(FRTransactionModel.RedeemedRewardPointsAmount))
+                    {
+                    Title = "Redeemed Reward Points Amount"
+                    },
+                    new ColumnProperty(nameof(FRTransactionModel.OrderTotal))
+                    {
+                    Title = "Total incl. GST"
+                    },
+                    
+                    new ColumnProperty(nameof(FRTransactionModel.PaymentMode))
+                    {
+                    Title = "Payment Mode"
+                    },
+                    new ColumnProperty(nameof(FRTransactionModel.RedeemedRewardPoints))
+                    {
+                    Title = "Redeemed Reward Points"
+                    }
+ 
+                    }
+                    }
+                    )
+                </div>
+            </div>
+        </div>
+     </div>
+</form>

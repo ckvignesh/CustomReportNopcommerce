@@ -1,0 +1,146 @@
+﻿
+@using Nop.Plugin.RefundReport.Models
+@using Nop.Plugin.RefundReport.Domain
+@using Nop.Web.Framework.Models.DataTables
+
+@model Nop.Plugin.RefundReport.Models.RRConfigurationModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+@await Component.InvokeAsync("StoreScopeConfiguration")
+
+@*<h1>
+    Merchandise Reports
+</h1>
+<button type="button" class="btn btn-success">
+    <i class="fas fa-download"></i>
+    @T("Admin.Common.Export")
+</button>*@
+<form asp-controller="RefundReport" asp-action="Configure" method="post">
+    <div class="row">
+        <h1 class="float-left col-md-11">
+            Refund Reports
+        </h1>
+        <div class="col.md-1">
+            <div class="btn-group float-right">
+                <button asp-action="ExportExcel" type="submit" class="btn btn-success">
+                    <i class="fas fa-download"></i>
+                    @T("Admin.Common.Export")
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cards-group">
+        <div class="card card-default card-search">
+            <div class="card-body">
+                <div class="search-body">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    @*<nop-label asp-for="OrderNumber" />*@
+                                    <label class="col-form-label">Receipt Number</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="OrderNumber" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    <label class="col-form-label">Payment Mode</label>
+
+                                    @*<nop-label asp-for="PaymentMode" />*@
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="PaymentMode" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    <label class="col-form-label">Customer Name</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="Customer" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        </div>
+                        <div class="form-group row">
+                            <div class="text-center col-12">
+                                <button type="button" id="search-transaction" class="btn btn-primary btn-search"><i class="fas fa-search"></i>@T("Admin.Common.Search")</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-body">
+
+                    @await Html.PartialAsync("Table", new DataTablesModel
+                    {
+                    Name = "transaction-grid",
+                    UrlRead = new DataUrl("TransactionList", "RefundReport", null),
+                    SearchButtonId = "search-transaction",
+                    Length = Model.PageSize,
+                    LengthMenu =  Model.AvailablePageSizes,
+                    Filters = new List<FilterParameter>
+                    {
+                    new FilterParameter(nameof(Model.OrderNumber)),
+                    new FilterParameter(nameof(Model.Customer)),
+                    new FilterParameter(nameof(Model.PaymentMode)),
+                    new FilterParameter(nameof(Model.PaymentStatus)),
+                    },
+                    ColumnCollection = new List<ColumnProperty>
+                    {
+                new ColumnProperty(nameof(RRTransactionModel.OrderDate))
+                {
+                Title = "Receipt Date (UTC)"
+                },
+                new ColumnProperty(nameof(RRTransactionModel.OrderNumber))
+                {
+                Title = "Receipt Number"
+                },
+               
+                new ColumnProperty(nameof(RRTransactionModel.Customer))
+                {
+                Title = "Customer Name"
+                },
+                
+                new ColumnProperty(nameof(RRTransactionModel.PaymentStatus))
+                {
+                Title = "Payment Status"
+                },
+                //new ColumnProperty(nameof(RRTransactionModel.PaymentMode))
+                //{
+                //Title = "Payment Mode"
+                //},
+                new ColumnProperty(nameof(RRTransactionModel.RefundedAmountExclTax))
+                {
+                Title = "Refunded Amount Excl.GST"
+                },
+                new ColumnProperty(nameof(RRTransactionModel.GST))
+                {
+                Title = "GST"
+                },                
+                new ColumnProperty(nameof(RRTransactionModel.RefundedAmount))
+                {
+                Title = "Refunded Amount"
+                },
+                
+                }
+                }
+                )
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

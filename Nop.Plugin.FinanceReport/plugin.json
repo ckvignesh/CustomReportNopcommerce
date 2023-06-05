@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Report",
+  "FriendlyName": "FinanceReport",
+  "SystemName": "FinanceReport",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.50" ],
+  "Author": "CCTS",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.FinanceReport.dll",
+  "Description": "This plugin enables Finance Report"
+}

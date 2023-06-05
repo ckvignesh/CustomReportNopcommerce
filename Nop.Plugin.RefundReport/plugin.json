@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Refund Report",
+  "FriendlyName": "RefundReport",
+  "SystemName": "RefundReport",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.50" ],
+  "Author": "CCTS",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.RefundReport.dll",
+  "Description": "This plugin enables Refund Report"
+}
