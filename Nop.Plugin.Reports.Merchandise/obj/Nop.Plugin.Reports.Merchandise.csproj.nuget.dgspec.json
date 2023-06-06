@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj": {}
+    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "projectName": "Nop.Core",
-        "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
-        "packagesPath": "C:\\Users\\kalya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\obj\\",
+        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
+        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kalya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,17 +121,17 @@
         }
       }
     },
-    "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "projectName": "Nop.Data",
-        "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
-        "packagesPath": "C:\\Users\\kalya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Data\\obj\\",
+        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
+        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kalya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,8 +145,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               }
             }
           }
@@ -210,17 +210,17 @@
         }
       }
     },
-    "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "projectName": "Nop.Services",
-        "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
-        "packagesPath": "C:\\Users\\kalya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Services\\obj\\",
+        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
+        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kalya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -234,11 +234,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
               }
             }
           }
@@ -310,17 +310,17 @@
         }
       }
     },
-    "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj": {
+    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
         "projectName": "Nop.Plugin.Reports.Merchandise",
-        "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
-        "packagesPath": "C:\\Users\\kalya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\obj\\",
+        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
+        "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
+        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kalya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -334,8 +334,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-                "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj"
               }
             }
           }
@@ -369,17 +369,17 @@
         }
       }
     },
-    "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "projectName": "Nop.Web.Framework",
-        "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
-        "packagesPath": "C:\\Users\\kalya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Presentation\\Nop.Web.Framework\\obj\\",
+        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
+        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kalya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -393,14 +393,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
               },
-              "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-                "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
               }
             }
           }
@@ -444,6 +444,77 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+      "version": "4.5.0",
+      "restore": {
+        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
+        "projectName": "Nop.Web",
+        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
+        "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
+        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              },
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              },
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              },
+              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

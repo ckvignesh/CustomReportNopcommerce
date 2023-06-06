@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Nop.Core;
 
 namespace Nop.Plugin.Reports.Merchandise.Domain
@@ -27,8 +28,11 @@ namespace Nop.Plugin.Reports.Merchandise.Domain
         public string Brands { get; set; }
         public string VendorName { get; set; }
         public string ProductLaunchDate { get; set; }
-
         public string ProductStatus { get; set; }
         public string InventoryMethod { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? FromDate { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? ToDate { get; set; }
     }
 }

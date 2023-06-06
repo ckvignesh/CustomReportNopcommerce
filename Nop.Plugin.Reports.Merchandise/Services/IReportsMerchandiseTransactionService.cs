@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using DocumentFormat.OpenXml.Bibliography;
 using Nop.Core;
 using Nop.Core.Domain.Vendors;
@@ -11,7 +12,7 @@ namespace Nop.Plugin.Reports.Merchandise.Services
     /// </summary>
     public partial interface IReportsMerchandiseTransactionService
     {
-        Task<IPagedList<MerchandiseTransactionLog>> GetTransactionLogAsync(int pageIndex = 0, int pageSize = int.MaxValue, string productName = null, string sKU = null, string categories = null, string brands = null, string vendorName = null, string productLaunchDate = null);
+        Task<IPagedList<MerchandiseTransactionLog>> GetTransactionLogAsync(int pageIndex = 0, int pageSize = int.MaxValue, string productName = null, string sKU = null, string categories = null, string brands = null, string vendorName = null, string productLaunchDate = null, DateTime? fromDate = null, DateTime? toDate = null);
 
         MerchandiseTransactionLog GetByReference(string refNo);
 

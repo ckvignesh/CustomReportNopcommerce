@@ -5,6 +5,7 @@ using DocumentFormat.OpenXml.Wordprocessing;
 using Microsoft.Extensions.Hosting;
 using Nop.Core.Domain.Catalog;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Nop.Plugin.Reports.Merchandise.Models
 {
@@ -31,5 +32,9 @@ namespace Nop.Plugin.Reports.Merchandise.Models
         public string ProductLaunchDate { get; set; }
         public string ProductStatus { get; set; }
         public string InventoryMethod { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? FromDate { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? ToDate { get; set; }
     }
 }

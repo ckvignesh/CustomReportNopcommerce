@@ -234,7 +234,7 @@ namespace Nop.Plugin.Reports.Merchandise.Controllers
             if (!await _permissionService.AuthorizeAsync(StandardPermissionProvider.AccessAdminPanel) || !await _permissionService.AuthorizeAsync(MerchandiseReportPermission.MerchandiseReport))
                 return await AccessDeniedDataTablesJson();
 
-            var transactions = await _transactionService.GetTransactionLogAsync(pageIndex: searchModel.Page - 1, pageSize: searchModel.PageSize, productName: searchModel.ProductName, sKU: searchModel.SKU, categories: searchModel.Categories, brands:searchModel.Brands, vendorName:searchModel.VendorName, productLaunchDate:searchModel.ProductLaunchDate);
+            var transactions = await _transactionService.GetTransactionLogAsync(pageIndex: searchModel.Page - 1, pageSize: searchModel.PageSize, productName: searchModel.ProductName, sKU: searchModel.SKU, categories: searchModel.Categories, brands:searchModel.Brands, vendorName:searchModel.VendorName, productLaunchDate:searchModel.ProductLaunchDate, toDate:searchModel.ToDate, fromDate:searchModel.FromDate);
 
             var gridModel = new TransactionListModel().PrepareToGrid(searchModel, transactions, () =>
             {
@@ -259,6 +259,8 @@ namespace Nop.Plugin.Reports.Merchandise.Controllers
                     ProductLaunchDate = trans.ProductLaunchDate,
                     ProductStatus = trans.ProductStatus,
                     InventoryMethod = trans.InventoryMethod,
+                    FromDate = trans.FromDate,
+                    ToDate = trans.ToDate,
                 });
             });
             

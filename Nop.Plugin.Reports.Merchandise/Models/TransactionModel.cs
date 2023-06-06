@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Nop.Core;
 using Nop.Plugin.Reports.Merchandise.Domain;
@@ -33,6 +34,10 @@ namespace Nop.Plugin.Reports.Merchandise.Models
         public string ProductLaunchDate { get; set; }
         public string ProductStatus { get; set; }
         public string InventoryMethod { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? FromDate { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? ToDate { get; set; }
 
     }
 }

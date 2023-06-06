@@ -1,7 +1,7 @@
 USE [singhealth_DB]
 GO
 
-/****** Object:  View [dbo].[Refund_Report]    Script Date: 6/5/2023 10:06:58 AM ******/
+/****** Object:  View [dbo].[Refund_Report]    Script Date: 6/5/2023 12:23:08 PM ******/
 SET ANSI_NULLS ON
 GO
 

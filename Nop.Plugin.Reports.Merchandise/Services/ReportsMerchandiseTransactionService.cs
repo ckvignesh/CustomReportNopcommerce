@@ -40,7 +40,7 @@ namespace Nop.Plugin.Reports.Merchandise.Services
 
         #region Methods
 
-        public virtual async Task<IPagedList<MerchandiseTransactionLog>> GetTransactionLogAsync(int pageIndex = 0, int pageSize = int.MaxValue, string productName = null, string sKU = null, string categories=null, string brands = null, string vendorName = null, string productLaunchDate = null)
+        public virtual async Task<IPagedList<MerchandiseTransactionLog>> GetTransactionLogAsync(int pageIndex = 0, int pageSize = int.MaxValue, string productName = null, string sKU = null, string categories=null, string brands = null, string vendorName = null, string productLaunchDate = null, DateTime? fromDate = null, DateTime? toDate = null)
         {
             //var res = (await GetAllAsync(merchantTxnRef: merchantTxnRef, orderId: orderId)).ToList();
             //var res = await _dataProvider.QueryAsync<ENETSTransactionLog>("SELECT * FROM [dbo].[Merchandise_Report]", null);
@@ -61,14 +61,24 @@ namespace Nop.Plugin.Reports.Merchandise.Services
                 sqlQuery = sqlQuery + " AND Brands like '%" + brands + "%'";
             if (!string.IsNullOrEmpty(vendorName))
                 sqlQuery = sqlQuery + " AND VendorName like '%" + vendorName + "%'";
-            if (!string.IsNullOrEmpty(productLaunchDate))
-                sqlQuery = sqlQuery + " AND ProductLaunchDate like '%" + productLaunchDate + "%'";
-            //if (!string.IsNullOrEmpty(orderStatus))
-                //    sqlQuery = sqlQuery + " AND OrderStatus like '%" + orderStatus + "%'";
-                //if (!string.IsNullOrEmpty(paymentMode))
-                //    sqlQuery = sqlQuery + " AND PaymentMode like '%" + paymentMode + "%'";
+            // has both SD ED
+            if ((!string.IsNullOrEmpty(fromDate.ToString())) && (!string.IsNullOrEmpty(toDate.ToString())))
+                sqlQuery = sqlQuery + " AND ProductLaunchDate BETWEEN CONVERT(datetime, '" + fromDate + "', 103) AND CONVERT(datetime, '" + toDate + "', 103)";
+            // has only SD
+            if ((string.IsNullOrEmpty(fromDate.ToString())) && (!string.IsNullOrEmpty(toDate.ToString())))
+                sqlQuery = sqlQuery + " AND ProductLaunchDate <= CONVERT(datetime, '" + toDate + "', 103)";
+            // has only ED
+            if ((!string.IsNullOrEmpty(fromDate.ToString())) && (string.IsNullOrEmpty(toDate.ToString())))
+                sqlQuery = sqlQuery + " AND ProductLaunchDate >= CONVERT(datetime, '" + fromDate + "', 103)";
 
-                var res = await _dataProvider.QueryAsync<MerchandiseTransactionLog>(sqlQuery, null);
+            //if (!string.IsNullOrEmpty(productLaunchDate))
+            //    sqlQuery = sqlQuery + " AND ProductLaunchDate like '%" + productLaunchDate + "%'";
+            //if (!string.IsNullOrEmpty(orderStatus))
+            //    sqlQuery = sqlQuery + " AND OrderStatus like '%" + orderStatus + "%'";
+            //if (!string.IsNullOrEmpty(paymentMode))
+            //    sqlQuery = sqlQuery + " AND PaymentMode like '%" + paymentMode + "%'";
+
+            var res = await _dataProvider.QueryAsync<MerchandiseTransactionLog>(sqlQuery, null);
 
             var records = new PagedList<MerchandiseTransactionLog>(res, pageIndex, pageSize);
 
