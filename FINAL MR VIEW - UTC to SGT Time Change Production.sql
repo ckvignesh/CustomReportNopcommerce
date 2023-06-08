@@ -1,6 +1,6 @@
 --RUN ONLY IN SGH PROD. DO NOT RUN IN UAT OR ANY OTHER ENV WITHOUT VERIFYING
 ---------------------------------------------- Products WITHOUT ANY DISCOUNT -----------------------------------------------------
-ALTER view [dbo].[Finance_Report] as
+ALTER view [dbo].[Merchandise_Report] as
 
 select 
 	DISTINCT P.Id AS 'ProductID',

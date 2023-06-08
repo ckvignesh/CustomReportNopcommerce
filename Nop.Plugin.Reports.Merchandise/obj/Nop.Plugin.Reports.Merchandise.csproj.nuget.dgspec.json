@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj": {}
+    "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj": {}
   },
   "projects": {
-    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+    "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "projectName": "Nop.Core",
-        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
-        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\obj\\",
+        "outputPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,14 +121,14 @@
         }
       }
     },
-    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+    "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "projectName": "Nop.Data",
-        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
-        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\obj\\",
+        "outputPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -145,8 +145,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               }
             }
           }
@@ -210,14 +210,14 @@
         }
       }
     },
-    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+    "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "projectName": "Nop.Services",
-        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
-        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\obj\\",
+        "outputPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -234,11 +234,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
               }
             }
           }
@@ -310,14 +310,14 @@
         }
       }
     },
-    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj": {
+    "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
         "projectName": "Nop.Plugin.Reports.Merchandise",
-        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
+        "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
         "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
-        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\obj\\",
+        "outputPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -334,8 +334,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web\\Nop.Web.csproj"
               }
             }
           }
@@ -369,14 +369,14 @@
         }
       }
     },
-    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+    "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "projectName": "Nop.Web.Framework",
-        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
-        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\obj\\",
+        "outputPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -393,14 +393,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
               },
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
               }
             }
           }
@@ -452,14 +452,14 @@
         }
       }
     },
-    "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+    "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
       "version": "4.5.0",
       "restore": {
-        "projectUniqueName": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
+        "projectUniqueName": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
         "projectName": "Nop.Web",
-        "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
+        "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web\\Nop.Web.csproj",
         "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
-        "outputPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web\\obj\\",
+        "outputPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -476,17 +476,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
               },
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
               },
-              "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-                "projectPath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+              "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+                "projectPath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
               }
             }
           }

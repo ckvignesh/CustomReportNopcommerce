@@ -1253,11 +1253,11 @@ D:\nopC\setup\nopCommerce_4.50.4_Source_modified\Plugins\Nop.Plugin.FinanceRepor
 D:\nopC\setup\nopCommerce_4.50.4_Source_modified\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\ref\Nop.Plugin.FinanceReport.dll
 D:\nopC\setup\nopCommerce_4.50.4_Source_modified\Presentation\Nop.Web\Plugins\FinanceReport\logo.png
 C:\Users\kalya\Downloads\nopCommerce_4.50.3_Source (1)\src\Presentation\Nop.Web\Plugins\FinanceReport\logo.png
-D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.csproj.AssemblyReference.cache
-D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.GeneratedMSBuildEditorConfig.editorconfig
-D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.AssemblyInfoInputs.cache
-D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.AssemblyInfo.cs
-D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.csproj.CoreCompileInputs.cache
+D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\Nop.Web.deps.json
+D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\Nop.Web.runtimeconfig.json
+D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\Nop.Web.runtimeconfig.dev.json
+D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\Nop.Web.staticwebassets.runtime.json
+D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\Nop.Web.exe
 D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\logo.png
 D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\plugin.json
 D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\Views\_ViewImports.cshtml
@@ -1562,6 +1562,11 @@ D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceRep
 D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\refs\System.Xml.XPath.dll
 D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\refs\System.Xml.XPath.XDocument.dll
 D:\Nopcommerce Repos\Nopcommerce-App\src\Presentation\Nop.Web\Plugins\FinanceReport\refs\WindowsBase.dll
+D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.csproj.AssemblyReference.cache
+D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.AssemblyInfoInputs.cache
+D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.AssemblyInfo.cs
+D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.csproj.CoreCompileInputs.cache
 D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.csproj.CopyComplete
 D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\Nop.Plugin.FinanceReport.dll
 D:\Nopcommerce Repos\Nopcommerce-App\src\Plugins\Nop.Plugin.FinanceReport\obj\Debug\net6.0\refint\Nop.Plugin.FinanceReport.dll

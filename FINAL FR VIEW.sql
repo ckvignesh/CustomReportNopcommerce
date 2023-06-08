@@ -1,14 +1,3 @@
-USE [singhealth_DB]
-GO
-
-/****** Object:  View [dbo].[Finance_Report]    Script Date: 6/5/2023 12:22:30 PM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
-
 
 
 

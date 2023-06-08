@@ -30,6 +30,7 @@ namespace Nop.Plugin.FinanceReport.Services
                 new PropertyByName<FinanceReportransactionLog>("Receipt Date (UTC)", p => p.OrderDate),
                 new PropertyByName<FinanceReportransactionLog>("Receipt Number", p => p.OrderNumber),
                 new PropertyByName<FinanceReportransactionLog>("Order Status", p => p.OrderStatus),
+                new PropertyByName<FinanceReportransactionLog>("Payment Status", p => p.PaymentStatus),
                 new PropertyByName<FinanceReportransactionLog>("Customer Name", p => p.Customer),
                 new PropertyByName<FinanceReportransactionLog>("Shipping City", p => p.CountryName),
                 new PropertyByName<FinanceReportransactionLog>("Amt b4 disc excl. GST", p => p.OrderSubtotalExclTax),
@@ -43,10 +44,6 @@ namespace Nop.Plugin.FinanceReport.Services
                 new PropertyByName<FinanceReportransactionLog>("Total incl. GST", p => p.OrderTotal),
                 new PropertyByName<FinanceReportransactionLog>("Payment Mode", p => p.PaymentMode),
                 new PropertyByName<FinanceReportransactionLog>("Redeemed Reward Points", p => p.RedeemedRewardPoints),
-
-
-                //new PropertyByName<FinanceReportransactionLog>("Payment Status", p => p.PaymentStatus),
-
             };
 
             return await new PropertyManager<FinanceReportransactionLog>(properties, _catalogSettings).ExportToXlsxAsync(report);

@@ -5167,6 +5167,25 @@
           "bin/placeholder/Nop.Services.dll": {}
         }
       },
+      "Nop.Web/4.5.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Nop.Core": "4.5.0",
+          "Nop.Data": "4.5.0",
+          "Nop.Services": "4.5.0",
+          "Nop.Web.Framework": "4.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Nop.Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nop.Web.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Nop.Web.Framework/4.5.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -14149,6 +14168,11 @@
       "path": "../../Libraries/Nop.Services/Nop.Services.csproj",
       "msbuildProject": "../../Libraries/Nop.Services/Nop.Services.csproj"
     },
+    "Nop.Web/4.5.0": {
+      "type": "project",
+      "path": "../../Presentation/Nop.Web/Nop.Web.csproj",
+      "msbuildProject": "../../Presentation/Nop.Web/Nop.Web.csproj"
+    },
     "Nop.Web.Framework/4.5.0": {
       "type": "project",
       "path": "../../Presentation/Nop.Web.Framework/Nop.Web.Framework.csproj",
@@ -14157,7 +14181,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Nop.Web.Framework >= 4.5.0"
+      "Nop.Web >= 4.5.0"
     ]
   },
   "packageFolders": {
@@ -14187,8 +14211,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-              "projectPath": "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+            "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Presentation\\Nop.Web\\Nop.Web.csproj": {
+              "projectPath": "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Presentation\\Nop.Web\\Nop.Web.csproj"
             }
           }
         }

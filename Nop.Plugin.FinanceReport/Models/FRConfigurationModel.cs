@@ -2,6 +2,7 @@
 using Nop.Web.Framework.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Nop.Plugin.FinanceReport.Models
 {
@@ -25,13 +26,11 @@ namespace Nop.Plugin.FinanceReport.Models
         public decimal OrderShippingExclTax { get; set; }
         public int RedeemedRewardPoints { get; set; }
         public decimal RedeemedRewardPointsAmount { get; set; }
+        [UIHint("DateNullable")]
         public DateTime? FromDate { get; set; }
+        [UIHint("DateNullable")]
         public DateTime? ToDate { get; set; }
 
-        //public FRFRConfigurationModel()
-        //{
-        //    StartDate = null;
-        //    EndDate = null;
-        //}
+        
     }
 }

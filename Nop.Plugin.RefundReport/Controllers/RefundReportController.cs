@@ -158,7 +158,7 @@ namespace Nop.Plugin.RefundReport
             if (!await _permissionService.AuthorizeAsync(StandardPermissionProvider.AccessAdminPanel) && !await _permissionService.AuthorizeAsync(RefundReportPermission.RefundReport))
                 return await AccessDeniedDataTablesJson();
 
-            var transactions = await _refundReportTransactionService.GetTransactionLogAsync(pageIndex: searchModel.Page - 1, pageSize: searchModel.PageSize, orderNumber: searchModel.OrderNumber, customer: searchModel.Customer, paymentStatus: searchModel.PaymentStatus, paymentMode: searchModel.PaymentMode);
+            var transactions = await _refundReportTransactionService.GetTransactionLogAsync(pageIndex: searchModel.Page - 1, pageSize: searchModel.PageSize, orderNumber: searchModel.OrderNumber, customer: searchModel.Customer, paymentStatus: searchModel.PaymentStatus, paymentMode: searchModel.PaymentMode, fromDate: searchModel.FromDate, toDate: searchModel.ToDate, oFromDate: searchModel.OFromDate, oToDate: searchModel.OToDate);
 
             var gridModel = new TransactionListModel().PrepareToGrid(searchModel, transactions, () =>
             {
@@ -172,7 +172,12 @@ namespace Nop.Plugin.RefundReport
                     OrderDate = trans.OrderDate,
                     GST = trans.GST,
                     RefundedAmount = trans.RefundedAmount,
-                    RefundedAmountExclTax = trans.RefundedAmountExclTax
+                    RefundedAmountExclTax = trans.RefundedAmountExclTax,
+                    RefundedDate = trans.RefundedDate,
+                    FromDate = trans.FromDate,
+                    ToDate = trans.ToDate,
+                    OFromDate = trans.OFromDate,
+                    OToDate = trans.OToDate
                 });
             });
 

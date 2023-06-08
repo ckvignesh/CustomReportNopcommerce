@@ -10,7 +10,7 @@ namespace Nop.Plugin.RefundReport.Services
 {
     public partial interface IRefundReportTransactionService
     {
-        Task<IPagedList<RefundReportTransactionlog>> GetTransactionLogAsync(int pageIndex = 0, int pageSize = int.MaxValue, string orderNumber = null, string customer = null, string paymentStatus = null, string orderStatus = null, string paymentMode = null);
+        Task<IPagedList<RefundReportTransactionlog>> GetTransactionLogAsync(int pageIndex = 0, int pageSize = int.MaxValue, string orderNumber = null, string customer = null, string paymentStatus = null, string orderStatus = null, string paymentMode = null, DateTime? fromDate = null, DateTime? toDate = null, DateTime? oFromDate = null, DateTime? oToDate = null);
 
         Task<IList<RefundReportTransactionlog>> GetAllAsync(string merchantTxnRef = null, string orderId = null);
         RefundReportTransactionlog GetByReference(string refNo);

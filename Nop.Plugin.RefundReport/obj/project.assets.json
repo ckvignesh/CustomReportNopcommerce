@@ -14161,19 +14161,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kalya\\.nuget\\packages\\": {}
+    "C:\\Users\\vignesh.ck\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Plugins\\Nop.Plugin.RefundReport\\Nop.Plugin.RefundReport.csproj",
+      "projectUniqueName": "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Plugins\\Nop.Plugin.RefundReport\\Nop.Plugin.RefundReport.csproj",
       "projectName": "Nop.Plugin.RefundReport",
-      "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Plugins\\Nop.Plugin.RefundReport\\Nop.Plugin.RefundReport.csproj",
-      "packagesPath": "C:\\Users\\kalya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Plugins\\Nop.Plugin.RefundReport\\obj\\",
+      "projectPath": "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Plugins\\Nop.Plugin.RefundReport\\Nop.Plugin.RefundReport.csproj",
+      "packagesPath": "C:\\Users\\vignesh.ck\\.nuget\\packages\\",
+      "outputPath": "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Plugins\\Nop.Plugin.RefundReport\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kalya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vignesh.ck\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -14187,8 +14187,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-              "projectPath": "C:\\Users\\kalya\\Downloads\\nopCommerce_4.50.3_Source (1)\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+            "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+              "projectPath": "D:\\Nopcommerce Repos\\Nopcommerce-App\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
             }
           }
         }

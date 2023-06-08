@@ -39,7 +39,7 @@
                         <div class="col-md-6">
                             <div class="form-group row">
                                 <div class="col-md-4">
-                                    @*<nop-label asp-for="OrderNumber" />*@
+                                    
                                     <label class="col-form-label">Search From Date</label>
                                 </div>
                                 <div class="col-md-8">
@@ -50,7 +50,7 @@
                         <div class="col-md-6">
                             <div class="form-group row">
                                 <div class="col-md-4">
-                                    @*<nop-label asp-for="OrderNumber" />*@
+                                    
                                     <label class="col-form-label">Search To Date</label>
                                 </div>
                                 <div class="col-md-8">
@@ -61,7 +61,7 @@
                         <div class="col-md-6">
                             <div class="form-group row">
                                 <div class="col-md-4">
-                                    @*<nop-label asp-for="OrderNumber" />*@
+                                    
                                     <label class="col-form-label">Receipt Number</label>
                                 </div>
                                 <div class="col-md-8">
@@ -78,6 +78,18 @@
                                 </div>
                                 <div class="col-md-8">
                                     <nop-editor asp-for="OrderStatus" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    
+                                    <label class="col-form-label">Payment Status</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <nop-editor asp-for="PaymentStatus" />
                                 </div>
                             </div>
                         </div>
@@ -104,12 +116,10 @@
                                 </div>
                             </div>
                         </div>
-                        <br />
-                        <br />
-                        <div class="form-group row">
-                            <div class="text-center col-12">
-                                <button type="button" id="search-transaction" class="btn btn-primary btn-search"><i class="fas fa-search"></i>@T("Admin.Common.Search")</button>
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="text-center col-12">
+                            <button type="button" id="search-transaction" class="btn btn-primary btn-search"><i class="fas fa-search"></i>@T("Admin.Common.Search")</button>
                         </div>
                     </div>
                 </div>
@@ -146,10 +156,13 @@
                     Title = "Receipt Number"
                     },
                      new ColumnProperty(nameof(FRTransactionModel.OrderStatus))
- {
+                    {
                     Title = "Order Status"
                     },
-                   
+                    new ColumnProperty(nameof(FRTransactionModel.PaymentStatus))
+                    {
+                    Title = "Payment Status"
+                    },
                     new ColumnProperty(nameof(FRTransactionModel.Customer))
                     {
                     Title = "Customer Name"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6qqulZU28X5pMwHkhU0r7/sWdEQN4cNldQrySFPd/s+Br8ig0CXFvSQ5DwOds23P1AmzkF5mvmqx4jhHgnbhKA==",
+  "dgSpecHash": "Hyt/7hk/7pe55QnDfK9ocCnkft7izyY0t6kUuG6bCXtSGD5IMou1rIQ1uWHehpzLWBi0hRN7Z8S8G8irieCOyw==",
   "success": true,
-  "projectFilePath": "D:\\NOPCOMMERCE WORK\\Build-Base-Repo\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
+  "projectFilePath": "D:\\NOPCOMMERCE-RESEARCH-CODE\\TESTING-NOP-4.50.3-REPO\\src\\Plugins\\Nop.Plugin.Reports.Merchandise\\Nop.Plugin.Reports.Merchandise.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vignesh.ck\\.nuget\\packages\\advancedstringbuilder\\0.1.0\\advancedstringbuilder.0.1.0.nupkg.sha512",
     "C:\\Users\\vignesh.ck\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",

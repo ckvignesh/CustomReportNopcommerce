@@ -1,5 +1,6 @@
 ﻿using Nop.Core;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Nop.Plugin.FinanceReport.Domain
 {
@@ -26,8 +27,9 @@ namespace Nop.Plugin.FinanceReport.Domain
         public decimal OrderShippingExclTax { get; set; }
         public int RedeemedRewardPoints { get; set; }
         public decimal RedeemedRewardPointsAmount { get; set; }
-
+        [UIHint("DateNullable")]
         public DateTime? FromDate { get; set; }
+        [UIHint("DateNullable")]
         public DateTime? ToDate { get; set; }
 
     }

@@ -1,5 +1,6 @@
 ﻿using Nop.Web.Framework.Models;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Nop.Plugin.FinanceReport.Models
 {
@@ -26,8 +27,11 @@ namespace Nop.Plugin.FinanceReport.Models
 
         public int RedeemedRewardPoints { get; set; }
         public decimal RedeemedRewardPointsAmount { get; set; }
+        [UIHint("DateNullable")]
         public DateTime? FromDate { get; set; }
+        [UIHint("DateNullable")]
         public DateTime? ToDate { get; set; }
+        
 
 
     }

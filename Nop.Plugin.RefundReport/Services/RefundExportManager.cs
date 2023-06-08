@@ -29,10 +29,11 @@ namespace Nop.Plugin.RefundReport.Services
                 new PropertyByName<RefundReportTransactionlog>("Order Number",r => r.OrderNumber),
                 new PropertyByName<RefundReportTransactionlog>("Customer",r => r.Customer),
                 new PropertyByName<RefundReportTransactionlog>("Payment Status",r => r.PaymentStatus),
-                //new PropertyByName<RefundReportTransactionlog>("Payment Mode",r => r.PaymentMode),
+                new PropertyByName<RefundReportTransactionlog>("Refund Date",r => r.RefundedDate),
                 new PropertyByName<RefundReportTransactionlog>("Refunded Amount Excl.GST",r => r.RefundedAmountExclTax),
                 new PropertyByName<RefundReportTransactionlog>("GST",r => r.GST),
                 new PropertyByName<RefundReportTransactionlog>("Refunded Amount",r => r.RefundedAmount),
+
 
             };
 

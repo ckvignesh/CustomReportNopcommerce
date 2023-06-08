@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +18,15 @@ namespace Nop.Plugin.RefundReport.Models
         public decimal GST { get; set; }
         public decimal RefundedAmount { get; set; }
         public decimal RefundedAmountExclTax { get; set; }
+
+        public string RefundedDate { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? FromDate { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? ToDate { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? OToDate { get; set; }
+        [UIHint("DateNullable")]
+        public DateTime? OFromDate { get; set; }
     }
 }

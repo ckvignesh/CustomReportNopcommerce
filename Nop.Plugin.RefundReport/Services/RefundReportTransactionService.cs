@@ -31,7 +31,7 @@ namespace Nop.Plugin.RefundReport.Services
 
         #region Methods
 
-        public virtual async Task<IPagedList<RefundReportTransactionlog>> GetTransactionLogAsync(int pageIndex = 0, int pageSize = int.MaxValue, string orderNumber = null, string customer = null, string paymentStatus = null, string orderStatus = null, string paymentMode = null)
+        public virtual async Task<IPagedList<RefundReportTransactionlog>> GetTransactionLogAsync(int pageIndex = 0, int pageSize = int.MaxValue, string orderNumber = null, string customer = null, string paymentStatus = null, string orderStatus = null, string paymentMode = null, DateTime? fromDate = null, DateTime? toDate = null, DateTime? oFromDate = null, DateTime? oToDate = null)
         {
             //var res = (await GetAllAsync(merchantTxnRef: merchantTxnRef, orderId: orderId)).ToList();
             //var res = await _dataProvider.QueryAsync<ENETSTransactionLog>("SELECT [OrderNumber], [OrderDate], [Customer], [OrderStatus], [PaymentStatus], [OrderTotal], [OrderDiscount], [ShippingAddressId], [OrderShippingExclTax], [OrderTax], [OrderSubtotalExclTax], [OrderSubtotalInclTax], [PaymentMode], [CountryName] FROM [dbo].[Finance_Report]\r\n", null);
@@ -48,6 +48,26 @@ namespace Nop.Plugin.RefundReport.Services
             //    sqlQuery = sqlQuery + " AND OrderStatus like '%" + orderStatus + "%'";
             if (!string.IsNullOrEmpty(paymentMode))
                 sqlQuery = sqlQuery + " AND PaymentMode like '%" + paymentMode + "%'";
+            //dates - REFUND -------------------------------------------------------------------------------------------------------
+            // has both SD ED
+            if ((!string.IsNullOrEmpty(fromDate.ToString())) && (!string.IsNullOrEmpty(toDate.ToString())))
+                sqlQuery = sqlQuery + " AND OrderDate BETWEEN CONVERT(datetime, '" + fromDate + "', 103) AND CONVERT(datetime, '" + toDate + "', 103)";
+            // has only SD
+            if ((string.IsNullOrEmpty(fromDate.ToString())) && (!string.IsNullOrEmpty(toDate.ToString())))
+                sqlQuery = sqlQuery + " AND OrderDate <= CONVERT(datetime, '" + toDate + "', 103)";
+            // has only ED
+            if ((!string.IsNullOrEmpty(fromDate.ToString())) && (string.IsNullOrEmpty(toDate.ToString())))
+                sqlQuery = sqlQuery + " AND OrderDate >= CONVERT(datetime, '" + fromDate + "', 103)";
+            //dates - ORDER -------------------------------------------------------------------------------------------------------
+            // has both SD ED
+            if ((!string.IsNullOrEmpty(oFromDate.ToString())) && (!string.IsNullOrEmpty(oToDate.ToString())))
+                sqlQuery = sqlQuery + " AND RefundedDate BETWEEN CONVERT(datetime, '" + oFromDate + "', 103) AND CONVERT(datetime, '" + oToDate + "', 103)";
+            // has only SD
+            if ((string.IsNullOrEmpty(oFromDate.ToString())) && (!string.IsNullOrEmpty(oToDate.ToString())))
+                sqlQuery = sqlQuery + " AND RefundedDate <= CONVERT(datetime, '" + oToDate + "', 103)";
+            // has only ED
+            if ((!string.IsNullOrEmpty(oFromDate.ToString())) && (string.IsNullOrEmpty(oToDate.ToString())))
+                sqlQuery = sqlQuery + " AND RefundedDate >= CONVERT(datetime, '" + oFromDate + "', 103)";
 
             var res = await _dataProvider.QueryAsync<RefundReportTransactionlog>(sqlQuery, null);
 
